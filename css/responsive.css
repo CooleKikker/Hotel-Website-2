@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1150px) {
+    nav{
+        display: none;
+    }
+    .NavBar{
+        height: 171px;
+    }
+    .NavBar .above{
+        height: 116px;
+    }
+    .nav-icon{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    #OpenNav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .NavBar{
+        height: 231px;
+    }
+    .NavBar .above{
+        height: 176px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    #locomotiefimg{
+        width: 100%;
+    }
+    #locobg{
+        width: 100%;
+    }
+    #locobg .check{
+        margin-left: 45px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #locobg{
+        max-height: 550px;
+    }
+    #locobg .check{
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    #locobg .checks{
+        width: 5%;
+        margin-left: 5px;
+    }
+}
