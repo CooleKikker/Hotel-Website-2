@@ -50,6 +50,10 @@
         margin-left: 45px;
         margin-top: 15px;
     }
+    .blokjesdiv{
+        display: flex;
+        flex-direction: column;
+    }
     .blokjesbg1 .blokje{
         width: 90%;
         margin-left: 5%;
