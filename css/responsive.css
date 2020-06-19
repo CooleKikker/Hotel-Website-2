@@ -11,6 +11,17 @@
     .nav-icon{
         display: block;
     }
+    .citybackground .blok{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+
+    .citybackground{
+        height: 1155px;
+        padding-bottom: 10px;
+        background-size: cover;
+    }
 }
 
 @media only screen and (min-width: 1150px) {
@@ -39,11 +50,27 @@
         margin-left: 45px;
         margin-top: 15px;
     }
+    .blokjesbg1 .blokje{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .blokjesbg1 .midden{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .blokjesbg1 .blokje2{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .blokjesbg2 .blokje{
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media only screen and (max-width: 650px){
     #locobg{
-        max-height: 550px;
+        max-height: 1000px;
     }
     #locobg .check{
         margin-left: 15px;
@@ -52,5 +79,51 @@
     #locobg .checks{
         width: 5%;
         margin-left: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 950px){
+    .input,
+    .input-2{
+        width: 45%;
+    }
+    .yellowBlock{
+        height: 400px;
+    }
+    form .left{
+        width: 100%;
+    }
+
+    form .right{
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+
+@media only screen and (max-width: 1050px){
+    .whiteblock-2 img{
+        display: none;
+    }
+
+    .whiteblock-2 .left{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .whiteblock-2 .right{
+        width: 100%;
+        text-align: center;
+    }
+    .whiteblock-2 .iconsdiv{
+        width: 90%;
+    }
+    .whiteblock-2 p.lorum{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .whiteblock-2 button{
+        width: 50%;
     }
 }

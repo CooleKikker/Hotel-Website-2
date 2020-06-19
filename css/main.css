@@ -98,6 +98,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  overflow-x: hidden;
+}
+
 .container{
   max-width: 1280px;
   margin: 0px auto;
@@ -110,6 +114,44 @@ header{
   height: 669px;
   background-size: cover;
   background-position: center;
+}
+
+header h1{
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-family: montserrat, sans-serif;
+  margin-top: 100px;
+}
+
+header p.titel{
+  width: 55%;
+  margin-left: 22.5%;
+  text-align: center;
+  color: white;
+  font-family: montserrat, sans-serif;
+}
+
+.greater{
+  font-weight: bold;
+  font-size: 60px;
+}
+
+header button{
+  margin: auto;
+  height: 45px;
+  border: none;
+  width: 170px;
+  border-radius: 5px;
+  background-color: #f0d839;
+  margin-top: 20px;
+  font-family: montserrat, sans-serif;
+}
+
+header .midden{
+  width: 100%;
+  text-align: center;
 }
 
 .NavBar{
@@ -134,7 +176,7 @@ header{
 .yellowBlock{
   height: 267px;
   width: 100%;
-  background-color: #f0d839;
+  background-image: url(../img/yellowbackground.png);
 }
 
 .NavBar .above .yellow{
@@ -353,7 +395,7 @@ form label{
 }
 
 #locobg .check{
-  color: lightseagreen;
+  color: #00a4ff;
   font-size: 20px;
   margin-top: 30px;
   margin-left: 15px;
@@ -382,28 +424,449 @@ form label{
 
 .input{
   display: inline-block;
-  width: 15%;
+  width: 22.6%;
   margin-left: 2%;
 }
 
 .input-2{
   display: inline-block;
-  width: 7%;
+  width: 9%;
   margin-left: 2%;
 }
 
 .input-3{
   display: inline-block;
-  width: 20%;
+  width: 100%;
   margin-left: 2%;
   height: 50px;
+  margin-top: 15px;
 }
 
 .input-3 input{
   width: 100%;
   position: relative;
   height: 100%;
+  background-color: #333333;
+  color: white
 }
+
+form .left{
+  width: 80%;
+  float: left;
+  margin-left: 1%;
+}
+
+form .right{
+  width: 15%;
+  float: right;
+  margin-right: 4%
+}
+
+.whiteblock-1{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  clear: both;
+  text-align: center;
+  font-family:  montserrat, sans-serif;
+  padding-top: 50px;
+}
+
+.whiteblock-1 h3{
+  font-size: 30px;
+}
+
+.whiteblock-1 .left{
+  float: left;
+  width: 32%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.whiteblock-1 .right{
+  float: right;
+  width: 32%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+
+.whiteblock-1 i{
+  font-size: 30px;
+  color: #00a4ff;
+  float: left;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.whiteblock-1 p{
+  font-size: 14px;
+  margin-left: 70px;
+}
+
+.whiteblock-1 .titel{
+  font-weight: bold;
+  width: 100%;
+}
+
+.whiteblock-1 .kopje{
+  clear: both;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.citybackground{
+  background-image: url("../img/city.png");
+  width: 100%;
+  height: 610px;
+  margin-top: 10px;
+  width: 100%;
+  height: 500px;
+  clear: both;
+  text-align: center;
+  font-family:  montserrat, sans-serif;
+  padding-top: 50px;
+}
+
+.citybackground h3{
+  font-size: 25px;
+}
+
+.citybackground .blok{
+  background-color: white;
+  height: 325px;
+  width: 25%;
+  border: none;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 4%;
+  float: left;
+}
+
+.citybackground .first{
+  margin-left: 10%;
+}
+
+.citybackground .icon{
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.citybackground .yellowline{
+  width: 105%;
+  background-color: #f0d839;
+  height: 50px;
+  margin-left: -2.5%;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.citybackground .check{
+  color: #00a4ff;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-left: 25%;
+  display: inline-block;
+}
+
+.citybackground p.checktekst{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.citybackground .tkopje{
+  height: 60px;
+  margin-top: -25px;
+  text-align: left;
+}
+
+.whiteblock-2{
+  width: 100%;
+  height: 590px;
+}
+
+.whiteblock-2 .left{
+  float: left;
+  width: 40%;
+}
+
+.whiteblock-2 img{
+  float: right;
+  margin-top: 15%;
+  width: 80%;
+}
+
+.whiteblock-2 .right{
+  width: 59%;
+  float: right;
+}
+
+.whiteblock-2 .right .titeltekst{
+  margin-top: 10%;
+  font-size: 30px;
+  font-family: montserrat, sans-serif;
+  margin-left: 30px;
+}
+
+.whiteblock-2 .iconsdiv{
+  width: 75%;
+  border: 2px solid #00a4ff;
+  height: 80px;
+  margin-left: 4%;
+  margin-bottom: 5px;
+}
+
+.firsticon{
+  clip-path: polygon(0% 0%, 75% 0%, 88% 47%, 75% 100%, 0% 100%);
+  background-color: #00a4ff;
+  width: 36%;
+  height: 80px;
+  float: left;
+  position: relative;
+  z-index: 10;
+}
+
+.firsticon .icon{
+  line-height: 80px;
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+  float: left;
+}
+
+.firsticon p{
+  float: left;
+  color: white;
+  font-family: montserrat, sans-serif;
+  margin-left: 10px;
+  margin-top: 28px;
+}
+
+.secondicon{
+  clip-path: polygon(0% 0%, 75% 0%, 88% 47%, 75% 100%, 0% 100%);
+  background-color: #e4e4e4;
+  width: 46%;
+  height: 80px;
+  margin-left: -10%;
+  z-index: -1;
+  float: left;
+  position: relative;
+}
+
+.secondicon .icon{
+  line-height: 80px;
+  font-size: 30px;
+  color: #373737;
+  margin-left: 10px;
+  float: left;
+  margin-left: 27%;
+}
+
+.secondicon p{
+  float: left;
+  color: #373737;
+  font-family: montserrat, sans-serif;
+  margin-left: 10px;
+  margin-top: 28px;
+}
+
+.lasticon{
+  background-color: white;
+  width: 36%;
+  height: 80px;
+  margin-left: -10%;
+  z-index: -2;
+  float: left;
+  position: relative;
+}
+
+.lasticon .icon{
+  line-height: 80px;
+  font-size: 30px;
+  color: #373737;
+  margin-left: 10px;
+  float: left;
+  margin-left: 40%;
+}
+
+.lasticon p{
+  float: left;
+  color: #373737;
+  font-family: montserrat, sans-serif;
+  margin-left: 10px;
+  margin-top: 28px;
+}
+
+.whiteblock-2 p.lorum{
+  margin-left: 4%;
+  margin-top: 35px;
+  width: 70%;
+  font-family: montserrat, sans-serif;
+  font-size: 15px;
+}
+
+.whiteblock-2 button{
+  background-color: #f0d839;
+  width: 24%;
+  height: 45px;
+  margin-left: 6%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  font-family: montserrat, sans-serif;
+}
+
+.blokjesbg1{
+  width: 100%;
+  background-image: url("../img/Blokbg1.png");
+  margin-top: 50px;
+  text-align: center;
+  background-color: #00a4ff;
+  background-size: cover;
+  min-height: 747px;
+}
+
+.blokjesbg1 h3{
+  font-size: 25px;
+  font-family: montserrat, sans-serif;
+  line-height: 35px;
+  top: 65px;
+  position: relative;
+}
+
+.blokjesbg1 .blokje{
+  width: 27%;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  float: left;
+  margin-top: 75px;
+  margin-left: 9.5%;
+  z-index: 1;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.blokjesbg1 .midden{
+  width: 27%;
+  height: 555px;
+  background-color: white;
+  position: relative;
+  float: left;
+  margin-top: 65px;
+  z-index: 2;
+  clip-path: polygon(0% 0%, 100% 0, 100% 85%, 51% 100%, 0 85%);
+  border: 1px solid #d2d2d2;
+}
+
+.blokjesbg1 .blokje2{
+  width: 27%;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  float: left;
+  margin-top: 75px;
+  z-index: 1;
+}
+
+.blokjesbg1 img{
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+
+.blokje p,
+.midden p,
+.blokje2 p{
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+}
+
+.blokje h4,
+.midden h4,
+.blokje2 h4{
+  font-family: montserrat, sans-serif;
+  font-size: 22px;
+  margin-top: -8px;
+}
+
+.lorum2{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -22px;
+}
+
+.boekbutton{
+  width: 50%;
+  font-family: montserrat, sans-serif;
+  font-size: 15px;
+  border: none;
+  background-color: #f0d839;
+  height: 40px;
+  bottom: 25px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.blokjesbg2{
+  height: 670px;
+  background-image: url("../img/Blokbg2.png");
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.blokjesbg2 h3{
+  font-size: 25px;
+  font-family: montserrat, sans-serif;
+  line-height: 35px;
+  top: 65px;
+  margin: 0;
+  position: relative;
+}
+
+.blokjesbg2 .blokje{
+  height: 430px;
+  width: 28%;
+  margin-left: 1%;
+  margin-top: 115px;
+  background-color: white;
+  border-radius: 9px;
+  display: inline-block;
+}
+
+.blokjesbg2 .afbeelding{
+  width: 100%;
+  background-size: cover;
+  height: 235px;
+}
+
+.blokjesbg2 .knop{
+  width: 50%;
+  margin-top: 220px;
+  height: 40px;
+  border: none;
+  background-color: #f0d839;
+  font-family: montserrat, sans-serif; 
+}
+
+.blokjesbg2 h4{
+  margin-top: 40px;
+}
+
+.achtergrond1{
+  background-image: url("../img/stad1.png");
+}
+
+.achtergrond2{
+  background-image: url("../img/stad2.png");
+}
+
+.achtergrond3{
+  background-image: url("../img/stad3.png");
+}
+
+
 
 
 /* ==========================================================================
