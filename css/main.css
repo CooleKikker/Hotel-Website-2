@@ -102,6 +102,10 @@ body{
   overflow-x: hidden;
 }
 
+#hidden_field{
+  display: none;
+}
+
 .container{
   max-width: 1280px;
   margin: 0px auto;
@@ -337,6 +341,7 @@ form label.first{
   font-size: 16px;
   margin-left: 13%;
   display: inline-block;
+  margin-top: 4px;
 }
 
 .yellowBlock h2{
@@ -426,6 +431,13 @@ form label{
   display: inline-block;
   width: 22.6%;
   margin-left: 2%;
+}
+
+.input2{
+  display: inline-block;
+  width: 22.6%;
+  margin-left: 2%;
+  vertical-align: top;
 }
 
 .input-2{
@@ -805,11 +817,12 @@ form .right{
 }
 
 .blokjesbg2{
-  height: 670px;
+  height: fit-content;
   background-image: url("../img/Blokbg2.png");
   width: 100%;
   margin: 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .blokjesbg2 h3{
@@ -824,7 +837,7 @@ form .right{
 .blokjesbg2 .blokje{
   height: 430px;
   width: 28%;
-  margin-left: 1%;
+  margin-left: 4%;
   margin-top: 115px;
   background-color: white;
   border-radius: 9px;
@@ -867,7 +880,252 @@ form .right{
   flex-direction: row;
 }
 
+.blokjesdiv2{
+  display: flex;
+  flex-direction: row;
+}
 
+.newyorkparis{
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+
+.newyorkparis .afbeelding{
+  margin: 80px;
+  margin-right: 0;
+  margin-left: 50px;
+  height: 550px;
+  width: 60%;
+  background-image: url("../img/strand1.png");
+  background-size: cover;
+}
+
+.newyorkparis .infodiv{
+  width: 65%;
+  height: 360px;
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  border-radius: 15px;
+  top: 95px;
+  margin-left: 80%;
+  vertical-align: middle;
+  position: relative;
+  font-family: montserrat, sans-serif; 
+}
+
+.newyorkparis .infodiv h3{
+  font-weight: bold;
+  font-size: 35px;
+  font-family: Franklin Gothic Medium;
+  margin-left: 25px;
+}
+
+.newyorkparis .infodiv p{
+  margin-left: 25px;
+  margin-top: -25px;
+}
+
+.newyorkparis .infodiv .icons{
+  width: 100%;
+}
+
+.newyorkparis .infodiv .fas{
+  font-size: 35px;
+  color:#00a4ff;
+  margin-left: 20%;
+}
+
+.newyorkparis .infodiv .firsticon2{
+  margin-left: 10%;
+}
+
+.icontekst{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.icontekst p.icon{
+  display: inline;
+  margin-left: 18%;
+}
+
+.icontekst p.firsttekst{
+  margin-left: 9%;
+  display: inline-block;
+}
+
+.lorumtekst{
+  margin-top: 25px;
+}
+
+.newyorkparis h2{
+  font-size: 32px;
+  margin-left: 25px;
+  float: left;
+  margin-top: 0px;
+}
+
+.newyorkparis button{
+  height: 40px;
+  width: 40%;
+  background-color: #f0d839;
+  border: none;
+  float: right;
+  margin-right: 25px;
+}
+
+.rome{
+  width: 100%;
+  background-image: url("../img/rome.png");
+  height: fit-content;
+  text-align: center;
+  padding-top: 20px;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.rome h2{
+  color: white;
+  font-family: montserrat, sans-serif;
+  margin-bottom: 40px;
+}
+
+.rome p{
+  color: white;
+  font-family: montserrat, sans-serif;
+  width: 55%;
+  margin-left: 22.5%;
+  padding-top: 25px;
+}
+
+.rome img{
+  display: inline-block;
+  margin: 0;
+  margin-top: -16px;
+}
+
+.rome .foto{
+  width: 20%;
+  margin-left: 40%; 
+}
+
+.rome .name{
+  display: inline-block;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.fa-star{
+  display: inline-block;
+  font-size: 20px;
+  color: #f0d839;
+}
+
+
+.bergen{
+  width: 100%;
+  background-image: url("../img/bergen.png");
+  height: 400px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.bergen h3{
+  color: white;
+  font-family: montserrat, sans-serif;
+  margin: 0;
+}
+
+.bergen .fas{
+  font-size: 100px;
+  color: #f0d839;
+  margin-top: 180px;
+}
+
+.tt-suggestions{
+  background-color: white;
+}
+
+.tt-suggestions p{
+  background-color: white;
+  border-bottom: 1px solid black
+}
+
+.tt-suggestions p:hover{
+  color: #8a8a8a
+}
+
+.iconsbottom{
+  width: 80%;
+  margin-left: 10%;
+  height: 75px;
+  margin-bottom: 50px;
+}
+
+.iconsbottom .icon{
+  font-size: 70px;
+  float: left;
+}
+
+.icondiv{
+  height: 75px;
+  width: 30%;
+  display: inline-block;
+  margin-left: 3%;
+}
+
+.iconsbottom h2{
+  font-family: montserrat, sans-serif;
+  float: left;
+  vertical-align: top;
+  margin: 0;
+  margin-left: 10px;
+  height: 0;
+  margin-top: -2px;
+}
+
+.iconsbottom p{
+  font-family: montserrat, sans-serif;
+  margin: 0;
+  float: left;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+.roundicons{
+  width: 100%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.roundicons ul{
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+
+.roundicons ul li{
+  border-radius: 50%;
+  border: 3px solid #f0d839;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer{
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  line-height: 150px;
+  color: black;
+  background-color: #f0d839;
+}
 
 /* ==========================================================================
    Helper classes

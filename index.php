@@ -1,3 +1,19 @@
+<?php
+  if(isset($_POST['submit'])){
+    $locationid = $_POST['hotel_id'];
+    $datein = $_POST['date'];
+    $dateout = $_POST['dateout'];
+    $adult = $_POST['adult'];
+    $child = $_POST['child'];
+    $conn = new mysqli("localhost", "root", "", "bookings");
+    $query = "INSERT INTO `booking` (hotel_id, check_in, check_out, adults, children) VALUES ('$locationid', '$datein', '$dateout', '$adult', '$child')";
+    if($conn->query($query)){
+      echo "Je hebt succesvol geboekt!";
+    }
+  }
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -76,9 +92,10 @@
     </header>
     <div class="yellowBlock">
       <h2 class="titel">FIND HOTELS</h2>
-      <form>
+      <form method="POST">
         <div class="left">
-          <div class="input"><label class="first" for="location">Where?</label><br><input class="first" type="text"
+          <input name="hotel_id" type="text" id="hidden_field" value="">
+          <div class="input2"><label class="first" for="location">Where?</label><br><input name="query" class="first query" type="text"
               name="location" placeholder="Location"></div>
           <div class="input"><label for="date"></label>Check In</label><br><input type="date" name="date"></div>
           <div class="input"><label for="dateout"></label>Check Out</label><br><input type="date" name="dateout"></div>
@@ -264,38 +281,126 @@
     </div>
     <div class="blokjesbg2">
       <h3>Trusted Since 2001<br>GO EXPLORE</h3>
-      <div class="blokje">
-        <div class="afbeelding achtergrond1">
-          <button class="knop">CLICK HERE</button>
+      <div class="blokjesdiv2">
+        <div class="blokje">
+          <div class="afbeelding achtergrond1">
+            <button class="knop">CLICK HERE</button>
+          </div>
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
         </div>
-        <h4>Lorem Ipsum Dolor</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.</p>
-      </div>
-      <div class="blokje">
-        <div class="afbeelding achtergrond2">
-          <button class="knop">CLICK HERE</button>
+        <div class="blokje">
+          <div class="afbeelding achtergrond2">
+            <button class="knop">CLICK HERE</button>
+          </div>
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
         </div>
-        <h4>Lorem Ipsum Dolor</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.</p>
-      </div>
-      <div class="blokje">
-        <div class="afbeelding achtergrond3">
-          <button class="knop">CLICK HERE</button>
+        <div class="blokje">
+          <div class="afbeelding achtergrond3">
+            <button class="knop">CLICK HERE</button>
+          </div>
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.</p>
         </div>
-        <h4>Lorem Ipsum Dolor</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.</p>
+    </div>
+    </div>
+    <div class="newyorkparis">
+      <div class="afbeelding">
+        <div class="infodiv">
+          <h3>NEW YORK + PARIS</h3>
+          <p>7 DAY + 6 NIGHT</p>
+          <div class="icons">
+            <i class="firsticon2 fas fa-plane plane"></i>
+            <i class="fas fa-university"></i>
+            <i class="fas fa-car-alt icon"></i>
+          </div>
+          <div class="icontekst">
+            <p class="firsttekst">Flight</p>
+            <p class="icon">Hotel</p>
+            <p class="icon">Transport</p>
+          </div>
+          <div class="lorumtekst">
+            <p class="lorumipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <h2>$1000</h2>
+          <button>BOOK NOW</button>
+        </div>
       </div>
     </div>
+    <div class="rome">
+      <h2>Customers Reviews<br>We are Travel Agent</h2>
+      <p>”Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”</p>
+      <div class="stars">
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="foto">
+        <img src="img/john.png" alt="john">
+        <p class="name">John Smith<br><span>Solo Traveler</span></p>
+    </div>
+    </div>
+    <div class="bergen">
+      <h3>Start Your Journey<br>Contact Us</h3>
+      <i class="fas fa-map-marker-alt"></i>
+    </div>
+    <div class="iconsbottom">
+      <div class="icondiv">
+        <i class="far icon fa-envelope"></i>
+        <h2>Email</h2><br>
+        <p>free@psdfreebies.com</p><br>
+        <p>free@psdfreebies.com</p><br>
+      </div>
+      <div class="icondiv">
+        <i class="icon fas fa-mobile-alt"></i>
+        <h2>Call us!</h2><br>
+        <p>+123 4567890</p><br>
+        <p>+123 4567890</p><br>
+      </div>
+      <div class="icondiv">
+        <i class="icon fas fa-map-marked"></i>
+        <h2>Address</h2><br>
+        <p>123, Main Road, New City</p><br>
+        <p>My Country 123456</p><br>
+      </div>
+    </div>
+    <div class="roundicons">
+      <ul>
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-google-plus-g"></i></li>
+        <li><i class="fab fa-vk"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+        <li><i class="fab fa-linkedin-in"></i></li>
+        <li><i class="fab fa-digg"></i></li>
+        <li><i class="fab fa-deviantart"></i></li>
+      </ul>
+    </div>
+    <footer>
+      <p>Copyright 2019, All Rights Reserved</p>
+    </footer>
   </div>
 
 
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/typeahead.js/0.9.3/typeahead.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('input.query').typeahead({
+              name: 'query',
+              remote: 'query.php?query=%QUERY',
+              valueKey: 'value'
+          }).on('typeahead:selected', function(event, selection){
+              $("#hidden_field").val(selection.hotel_id);
+          });
+      });
+    </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
