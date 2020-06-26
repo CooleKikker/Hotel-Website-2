@@ -1127,6 +1127,20 @@ footer{
   background-color: #f0d839;
 }
 
+.yellowblock2{
+  height: fit-content;
+  width: 100%;
+  background-image: url(../img/yellowbackground.png);
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+    width: 25%
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
